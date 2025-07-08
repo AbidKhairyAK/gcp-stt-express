@@ -8,8 +8,8 @@ const client = new speech.SpeechClient()
 export async function recognize (audioFile: Buffer | NonSharedBuffer) {
 	const encoding = 'WEBM_OPUS' as const
 	const sampleRateHertz = 48000
-	const languageCode = 'id-ID'
-	const alternativeLanguageCodes = ['en-US']
+	const languageCode = 'en-US'
+	const alternativeLanguageCodes = ['id-ID']
 
 	const config = {
 		encoding,
